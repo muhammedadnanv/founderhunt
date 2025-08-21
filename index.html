@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Founder Hunt — Your Launchpad for SaaS Startups</title>
+  <meta name="description" content="Discover 400+ SaaS startup ideas and learn how to build them with Vibe Coding. Join our community of founders and accelerate your journey." />
+  <meta name="keywords" content="SaaS startup ideas, startup community, Vibe Coding, founder resources, tech startup, entrepreneur" />
+  <link rel="canonical" href="https://founderhunt.example/" />
+  <meta name="theme-color" content="#F2451B" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Founder Hunt — Your Launchpad for SaaS Startups" />
+  <meta property="og:description" content="Discover 400+ SaaS startup ideas and learn how to build them with Vibe Coding." />
+  <meta property="og:url" content="https://founderhunt.example/" />
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23FFFFFF'/%3E%3Ctext x='600' y='300' text-anchor='middle' font-family='Montserrat, sans-serif' font-size='72' font-weight='700' fill='%23F2451B'%3EFounder Hunt%3C/text%3E%3Ctext x='600' y='380' text-anchor='middle' font-family='Poppins, sans-serif' font-size='28' fill='%23666'%3EYour Launchpad for SaaS Startups%3C/text%3E%3C/svg%3E" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Founder Hunt — Your Launchpad for SaaS Startups" />
+  <meta name="twitter:description" content="Discover 400+ SaaS startup ideas and learn how to build them with Vibe Coding." />
+  <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23FFFFFF'/%3E%3Ctext x='600' y='300' text-anchor='middle' font-family='Montserrat, sans-serif' font-size='72' font-weight='700' fill='%23F2451B'%3EFounder Hunt%3C/text%3E%3Ctext x='600' y='380' text-anchor='middle' font-family='Poppins, sans-serif' font-size='28' fill='%23666'%3EYour Launchpad for SaaS Startups%3C/text%3E%3C/svg%3E" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23F2451B'/%3E%3Ctext x='50' y='62' text-anchor='middle' font-family='Montserrat, sans-serif' font-size='36' font-weight='700' fill='%23FFFFFF'%3EFH%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#F2451B'
+            },
+            white: '#FFFFFF',
+          },
+          fontFamily: {
+            montserrat: ['Montserrat', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif']
+          },
+          boxShadow: {
+            smooth: '0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Base */
+    html { scroll-behavior: smooth; }
+    body { background:#FFFFFF; }
+
+    /* Animations */
+    .animate-fade-in { animation: fadeIn .6s ease-out forwards; }
+    .animate-slide-up { animation: slideUp .6s ease-out forwards; }
+    .animate-float { animation: float 3s ease-in-out infinite; }
+    @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+    @keyframes slideUp { from{opacity:0; transform:translateY(24px)} to{opacity:1; transform:translateY(0)} }
+    @keyframes float { 0%,100%{ transform:translateY(0)} 50%{ transform:translateY(-8px) } }
+
+    /* Helpers */
+    .btn-primary { background: linear-gradient(135deg, #F2451B 0%, #F2451B 100%); transition: transform .2s ease, box-shadow .2s ease; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(242,69,27,.25); }
+    .card-hover { transition: box-shadow .25s ease, transform .25s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 16px 30px rgba(0,0,0,.08); }
+    .gradient-bg { background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 100%); }
+  </style>
+
+  <!-- Schema.org (optional, lightweight) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Founder Hunt",
+    "url": "https://founderhunt.example/",
+    "description": "Discover 400+ SaaS startup ideas and learn how to build them with Vibe Coding.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://founderhunt.example/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+
+<body class="font-montserrat text-gray-900">
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 inset-x-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100" role="navigation" aria-label="Primary">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="h-16 flex items-center justify-between">
+        <a href="#home" class="flex items-center gap-2" aria-label="Founder Hunt home">
+          <span class="text-2xl font-extrabold text-brand-orange tracking-tight">Founder Hunt</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#about" class="hover:text-brand-orange">About</a>
+          <a href="#startup-ideas" class="hover:text-brand-orange">Startup Ideas</a>
+          <a href="#community" class="hover:text-brand-orange">Community</a>
+          <a href="https://chat.whatsapp.com/KByJpDAN8JO0p5MhCgccdR" target="_blank" rel="noopener" class="btn-primary text-white px-5 py-2 rounded-lg font-semibold">Join Our Community</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg border border-gray-200" aria-label="Open menu" aria-expanded="false">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-gray-100 bg-white" role="menu">
+      <div class="px-4 py-2 space-y-1">
+        <a href="#about" class="block px-3 py-2 hover:text-brand-orange" role="menuitem">About</a>
+        <a href="#startup-ideas" class="block px-3 py-2 hover:text-brand-orange" role="menuitem">Startup Ideas</a>
+        <a href="#community" class="block px-3 py-2 hover:text-brand-orange" role="menuitem">Community</a>
+        <a href="https://chat.whatsapp.com/KByJpDAN8JO0p5MhCgccdR" target="_blank" rel="noopener" class="block px-3 py-2 text-brand-orange font-semibold" role="menuitem">Join Our Community</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="gradient-bg pt-24 md:pt-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="animate-fade-in">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight">
+          Your Launchpad for <span class="text-brand-orange">SaaS Startups</span>
+        </h1>
+        <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+          Discover 400+ SaaS startup ideas and learn how to build them with Vibe Coding.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
+          <button onclick="scrollToSection('startup-ideas')" class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg w-full sm:w-auto">
+            Explore Startup Ideas
+          </button>
+          <a href="https://chat.whatsapp.com/KByJpDAN8JO0p5MhCgccdR" target="_blank" rel="noopener" class="border-2 border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all w-full sm:w-auto">
+            Join Our Community
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-14 animate-float">
+        <div class="bg-white rounded-2xl shadow-smooth p-8 max-w-4xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="text-center">
+              <div class="text-3xl md:text-4xl font-extrabold text-brand-orange">400+</div>
+              <div class="text-gray-600">Startup Ideas</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl md:text-4xl font-extrabold text-brand-orange">10K+</div>
+              <div class="text-gray-600">Community Members</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl md:text-4xl font-extrabold text-brand-orange">50+</div>
+              <div class="text-gray-600">Success Stories</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-extrabold">Our Story</h2>
+        <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+          We believe every great SaaS company starts with a simple idea. Our mission is to help aspiring founders discover those ideas, learn how to build them, and connect with a community that supports their journey.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 card-hover">
+          <div class="w-16 h-16 bg-brand-orange/10 rounded-2xl flex items-center justify-center mb-6" aria-hidden="true">
+            <svg class="w-8 h-8 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c 0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Discover Ideas</h3>
+          <p class="text-gray-600">Browse 400+ curated SaaS startup ideas across industries and niches.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 card-hover">
+          <div class="w-16 h-16 bg-brand-orange/10 rounded-2xl flex items-center justify-center mb-6" aria-hidden="true">
+            <svg class="w-8 h-8 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Build Faster</h3>
+          <p class="text-gray-600">Follow step-by-step guides using the Vibe Coding methodology.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 card-hover">
+          <div class="w-16 h-16 bg-brand-orange/10 rounded-2xl flex items-center justify-center mb-6" aria-hidden="true">
+            <svg class="w-8 h-8 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zM6 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Connect</h3>
+          <p class="text-gray-600">Join a thriving founder community for feedback, support, and collabs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STARTUP IDEAS -->
+  <section id="startup-ideas" class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-extrabold">400+ SaaS Startup Ideas</h2>
+        <p class="mt-3 text-lg text-gray-600 max-w-3xl mx-auto">Explore our validated ideas with build guides and go-to-market tips.</p>
+      </div>
+
+      <!-- Search & Filter -->
+      <div class="mb-10">
+        <div class="flex flex-col md:flex-row gap-3 max-w-2xl mx-auto">
+          <label for="search-ideas" class="sr-only">Search ideas</label>
+          <input id="search-ideas" type="text" placeholder="Search startup ideas..." class="flex-1 px-5 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent" />
+          <label for="category-filter" class="sr-only">Filter by category</label>
+          <select id="category-filter" class="px-5 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent">
+            <option value="">All Categories</option>
+            <option value="productivity">Productivity</option>
+            <option value="ecommerce">E-commerce</option>
+            <option value="marketing">Marketing</option>
+            <option value="finance">Finance</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="education">Education</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Grid -->
+      <div id="startup-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+      <div class="text-center mt-10">
+        <a href="#" class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg inline-block">View All 400+ Ideas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section id="community" class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Join Our Community of Founders</h2>
+      <p class="mt-3 text-lg text-gray-600 max-w-3xl mx-auto">Connect with like-minded entrepreneurs, share your journey, get feedback, and find co-founders in our vibrant WhatsApp community.</p>
+
+      <div class="mt-10 bg-white rounded-2xl shadow-smooth p-10 max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="text-left">
+            <h3 class="text-2xl font-bold mb-5">What You Get</h3>
+            <ul class="space-y-3">
+              <li class="flex items-center"><svg class="w-6 h-6 text-brand-orange mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Daily startup discussions</li>
+              <li class="flex items-center"><svg class="w-6 h-6 text-brand-orange mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Expert mentorship sessions</li>
+              <li class="flex items-center"><svg class="w-6 h-6 text-brand-orange mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Co-founder matching</li>
+              <li class="flex items-center"><svg class="w-6 h-6 text-brand-orange mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Weekly coding challenges</li>
+            </ul>
+          </div>
+          <div class="text-center">
+            <div class="mb-6" aria-hidden="true"><div class="text-6xl mb-4">💬</div><p class="text-gray-600">Join 10,000+ founders building the future</p></div>
+            <a href="https://chat.whatsapp.com/KByJpDAN8JO0p5MhCgccdR" target="_blank" rel="noopener" class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg inline-block w-full">Join WhatsApp Community</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-extrabold">Why Choose Founder Hunt?</h2>
+        <p class="mt-3 text-lg text-gray-600 max-w-3xl mx-auto">Everything you need to go from idea to launch</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="text-center bg-white rounded-2xl p-8 shadow-sm border border-gray-100 card-hover">
+          <div class="w-20 h-20 bg-brand-orange/10 rounded-3xl flex items-center justify-center mx-auto mb-6" aria-hidden="true"><svg class="w-10 h-10 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div>
+          <h3 class="text-lg font-bold mb-2">400+ Startup Ideas</h3>
+          <p class="text-gray-600">Curated and validated ideas across multiple industries.</p>
+        </div>
+        <div class="text-center bg-white rounded-2xl p-8 shadow-sm border border-gray-100 card-hover">
+          <div class="w-20 h-20 bg-brand-orange/10 rounded-3xl flex items-center justify-center mx-auto mb-6" aria-hidden="true"><svg class="w-10 h-10 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg></div>
+          <h3 class="text-lg font-bold mb-2">Build with Vibe Coding</h3>
+          <p class="text-gray-600">Step-by-step tech guides with patterns that ship fast.</p>
+        </div>
+        <div class="text-center bg-white rounded-2xl p-8 shadow-sm border border-gray-100 card-hover">
+          <div class="w-20 h-20 bg-brand-orange/10 rounded-3xl flex items-center justify-center mx-auto mb-6" aria-hidden="true"><svg class="w-10 h-10 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+          <h3 class="text-lg font-bold mb-2">Founder Community</h3>
+          <p class="text-gray-600">10,000+ entrepreneurs, mentors and potential co-founders.</p>
+        </div>
+        <div class="text-center bg-white rounded-2xl p-8 shadow-sm border border-gray-100 card-hover">
+          <div class="w-20 h-20 bg-brand-orange/10 rounded-3xl flex items-center justify-center mx-auto mb-6" aria-hidden="true"><svg class="w-10 h-10 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg></div>
+          <h3 class="text-lg font-bold mb-2">Growth Resources</h3>
+          <p class="text-gray-600">Marketing, funding, and scale-up playbooks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+        <div class="md:col-span-2">
+          <div class="text-2xl font-extrabold text-brand-orange">Founder Hunt</div>
+          <p class="text-gray-400 mt-3 max-w-md">Your launchpad for SaaS startups. Discover ideas, learn to build, and connect with fellow founders.</p>
+          <div class="flex gap-4 mt-4" aria-label="Social links">
+           <a href="https://chat.whatsapp.com/KByJpDAN8JO0p5MhCgccdR" class="text-gray-400 hover:text-white" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M20.52 3.48A11.91 11.91 0 0 0 12.04 0C5.39 0 0 5.39 0 12.04c0 2.12.55 4.2 1.6 6.04L0 24l6.09-1.58a11.98 11.98 0 0 0 5.95 1.52h.01c6.65 0 12.04-5.39 12.04-12.04 0-3.21-1.25-6.22-3.56-8.46zM12.04 22c-1.94 0-3.85-.52-5.52-1.5l-.39-.23-3.62.94.97-3.53-.25-.36A9.94 9.94 0 0 1 2.04 12c0-5.51 4.49-9.99 10-9.99 2.67 0 5.18 1.04 7.07 2.93A9.94 9.94 0 0 1 22.04 12c0 5.51-4.48 10-10 10zm5.4-7.54c-.29-.14-1.7-.84-1.97-.94-.27-.1-.47-.14-.67.14-.2.29-.77.94-.95 1.13-.18.2-.35.22-.64.08-.29-.14-1.23-.45-2.34-1.43a8.77 8.77 0 0 1-1.62-2c-.17-.29-.02-.45.13-.59.13-.13.29-.35.43-.52.14-.18.18-.29.28-.48.09-.18.05-.35-.02-.49-.07-.14-.67-1.62-.91-2.22-.24-.58-.48-.5-.67-.51h-.57c-.19 0-.5.07-.76.35-.26.29-1 1-1 2.43 0 1.43 1.02 2.81 1.16 3 .14.2 2 3.05 4.83 4.28.68.29 1.21.46 1.62.59.68.22 1.29.19 1.78.11.54-.08 1.7-.7 1.94-1.38.24-.68.24-1.27.17-1.38-.07-.11-.26-.18-.55-.32z"/>
+  </svg>
+</a>
+
+            
+            
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold">Quick Links</h4>
+          <ul class="mt-3 space-y-2 text-gray-400">
+            <li><a href="#about" class="hover:text-white">About</a></li>
+            <li><a href="#startup-ideas" class="hover:text-white">Startup Ideas</a></li>
+            <li><a href="#community" class="hover:text-white">Community</a></li>
+            <li><a href="#" class="hover:text-white">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold">Resources</h4>
+          <ul class="mt-3 space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white">Vibe Coding</a></li>
+            <li><a href="#" class="hover:text-white">Success Stories</a></li>
+            <li><a href="#" class="hover:text-white">Templates</a></li>
+            <li><a href="#" class="hover:text-white">Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 text-center text-gray-400 text-sm">
+        © 2025 Founder Hunt. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="startup-modal" class="fixed inset-0 bg-black/50 z-50 hidden" role="dialog" aria-modal="true">
+    <div class="flex items-center justify-center min-h-screen p-4">
+      <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-smooth">
+        <div class="p-8">
+          <div class="flex justify-between items-start mb-6">
+            <h2 id="modal-title" class="text-2xl md:text-3xl font-extrabold"></h2>
+            <button id="close-modal" class="text-gray-400 hover:text-gray-600 text-2xl" aria-label="Close modal">&times;</button>
+          </div>
+          <div id="modal-content" class="prose max-w-none"></div>
+          <div class="mt-8 text-center">
+            <a href="https://chat.whatsapp.com/KByJpDAN8JO0p5MhCgccdR" target="_blank" rel="noopener" class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg inline-block">Start Building Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Data (from your original list)
+    const startupIdeas = [
+      { id:1, title:'AI Content Scheduler', category:'marketing', description:'Social media scheduling tool with AI-powered content suggestions', problem:'Small businesses struggle to maintain consistent social media presence', targetUsers:'Small business owners, social media managers, entrepreneurs', revenueModel:'Subscription-based ($29/month - $199/month)', techStack:'React, Node.js, OpenAI API, MongoDB', buildTime:'8-12 weeks', difficulty:'Intermediate' },
+      { id:2, title:'Invoice Automation Platform', category:'finance', description:'Automated invoicing and payment tracking for freelancers', problem:'Freelancers waste hours on manual invoice creation and follow-ups', targetUsers:'Freelancers, consultants, small agencies', revenueModel:'Freemium + Transaction fees (2.9% per payment)', techStack:'Vue.js, Python, Stripe API, PostgreSQL', buildTime:'6-10 weeks', difficulty:'Beginner' },
+      { id:3, title:'Team Productivity Analytics', category:'productivity', description:'Analytics dashboard for remote team productivity insights', problem:'Remote teams lack visibility into productivity and collaboration patterns', targetUsers:'Remote team managers, HR departments, startup founders', revenueModel:'Per-seat pricing ($15/user/month)', techStack:'React, Node.js, D3.js, MongoDB', buildTime:'10-14 weeks', difficulty:'Advanced' },
+      { id:4, title:'E-commerce Review Manager', category:'ecommerce', description:'Centralized platform to manage reviews across all e-commerce channels', problem:'E-commerce sellers struggle to monitor and respond to reviews across platforms', targetUsers:'E-commerce sellers, brand managers, digital agencies', revenueModel:'Tiered subscription ($49-$299/month)', techStack:'Next.js, Node.js, API integrations, Redis', buildTime:'8-12 weeks', difficulty:'Intermediate' },
+      { id:5, title:'Patient Portal Builder', category:'healthcare', description:'No-code patient portal builder for small medical practices', problem:"Small medical practices can't afford expensive patient portal solutions", targetUsers:'Small medical practices, independent doctors, clinics', revenueModel:'Monthly subscription ($99-$399/month)', techStack:'React, Node.js, HIPAA compliance, AWS', buildTime:'12-16 weeks', difficulty:'Advanced' },
+      { id:6, title:'Course Creation Assistant', category:'education', description:'AI-powered tool to help educators create engaging online courses', problem:'Educators struggle with technical aspects of online course creation', targetUsers:'Teachers, trainers, subject matter experts', revenueModel:'Subscription + marketplace commission (10%)', techStack:'React, Python, OpenAI API, AWS S3', buildTime:'10-14 weeks', difficulty:'Intermediate' },
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderStartupIdeas(startupIdeas);
+      initEvents();
+      observeCards();
+    });
+
+    function renderStartupIdeas(ideas){
+      const grid = document.getElementById('startup-grid');
+      grid.innerHTML = '';
+
+      const diffPill = (level) => ({
+        Beginner: 'bg-green-100 text-green-800',
+        Intermediate: 'bg-yellow-100 text-yellow-800',
+        Advanced: 'bg-red-100 text-red-800',
+      })[level] || 'bg-gray-100 text-gray-800';
+
+      ideas.forEach((idea) => {
+        const card = document.createElement('div');
+        card.className = 'bg-white rounded-2xl p-6 shadow-sm border border-gray-100 startup-card card-hover';
+        card.setAttribute('data-category', idea.category);
+        card.setAttribute('tabindex','0');
+        card.innerHTML = `
+          <div class="flex justify-between items-start mb-3">
+            <span class="px-3 py-1 text-xs font-semibold rounded-full bg-brand-orange/10 text-brand-orange">${capitalize(idea.category)}</span>
+            <span class="px-3 py-1 text-xs font-semibold rounded-full ${diffPill(idea.difficulty)}">${idea.difficulty}</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2">${idea.title}</h3>
+          <p class="text-gray-600 mb-4">${idea.description}</p>
+          <div class="space-y-2 text-sm text-gray-500 mb-5">
+            <div class="flex items-center"><svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>${idea.buildTime}</div>
+            <div class="flex items-center"><svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/></svg>${idea.revenueModel.split('(')[0]}</div>
+          </div>
+          <button class="w-full btn-primary text-white py-3 rounded-lg font-semibold">View Full Guide</button>
+        `;
+        card.addEventListener('click', () => showStartupModal(idea));
+        card.addEventListener('keypress', (e) => { if(e.key==='Enter') showStartupModal(idea); });
+        grid.appendChild(card);
+      });
+    }
+
+    function showStartupModal(idea){
+      const modal = document.getElementById('startup-modal');
+      const title = document.getElementById('modal-title');
+      const content = document.getElementById('modal-content');
+      title.textContent = idea.title;
+      content.innerHTML = `
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-3 text-brand-orange">The Problem</h3>
+            <p class="text-gray-700 mb-5">${idea.problem}</p>
+            <h3 class="text-xl font-bold mb-3 text-brand-orange">Target Users</h3>
+            <p class="text-gray-700 mb-5">${idea.targetUsers}</p>
+            <h3 class="text-xl font-bold mb-3 text-brand-orange">Revenue Model</h3>
+            <p class="text-gray-700">${idea.revenueModel}</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-3 text-brand-orange">Tech Stack</h3>
+            <p class="text-gray-700 mb-5">${idea.techStack}</p>
+            <h3 class="text-xl font-bold mb-3 text-brand-orange">Build Timeline</h3>
+            <p class="text-gray-700 mb-5">${idea.buildTime}</p>
+            <h3 class="text-xl font-bold mb-3 text-brand-orange">Difficulty</h3>
+            <p class="text-gray-700">${idea.difficulty}</p>
+          </div>
+        </div>
+        <div class="mt-8 p-6 bg-gray-50 rounded-xl border border-gray-100">
+          <h3 class="text-xl font-bold mb-3 text-brand-orange">Step-by-Step Build Guide</h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li>Detailed technical specifications</li>
+            <li>Database schema design</li>
+            <li>API endpoints documentation</li>
+            <li>Frontend component architecture</li>
+            <li>Deployment and scaling strategies</li>
+            <li>Marketing and growth tactics</li>
+          </ul>
+        </div>
+      `;
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function initEvents(){
+      // Mobile menu toggle + close on link click
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileBtn.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.toggle('hidden') === false;
+        mobileBtn.setAttribute('aria-expanded', String(isOpen));
+      });
+      mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileBtn.setAttribute('aria-expanded','false');
+      }));
+
+      // Search & filter
+      document.getElementById('search-ideas').addEventListener('input', filterIdeas);
+      document.getElementById('category-filter').addEventListener('change', filterIdeas);
+
+      // Modal close
+      const modal = document.getElementById('startup-modal');
+      document.getElementById('close-modal').addEventListener('click', closeModal);
+      modal.addEventListener('click', (e) => { if(e.target === modal) closeModal(); });
+
+      // Smooth anchor scroll fallback for older browsers
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const id = this.getAttribute('href');
+          const target = document.querySelector(id);
+          if(target){ target.scrollIntoView({behavior:'smooth', block:'start'}); }
+        });
+      });
+    }
+
+    function closeModal(){
+      document.getElementById('startup-modal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    function filterIdeas(){
+      const q = document.getElementById('search-ideas').value.toLowerCase();
+      const cat = document.getElementById('category-filter').value;
+      const filtered = startupIdeas.filter(idea => {
+        const matchesText = [idea.title, idea.description, idea.problem].some(v => v.toLowerCase().includes(q));
+        const matchesCat = !cat || idea.category === cat;
+        return matchesText && matchesCat;
+      });
+      renderStartupIdeas(filtered);
+      observeCards();
+    }
+
+    function scrollToSection(id){
+      const el = document.getElementById(id);
+      if(el){ el.scrollIntoView({behavior:'smooth', block:'start'}); }
+    }
+
+    function capitalize(s){ return s.charAt(0).toUpperCase() + s.slice(1); }
+
+    function observeCards(){
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('animate-slide-up'); });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+      document.querySelectorAll('.startup-card, .card-hover').forEach(el => observer.observe(el));
+    }
+  </script>
+</body>
+</html>
